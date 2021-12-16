@@ -3,8 +3,9 @@ class Solution:
     def kClosest(self, points: List[List[int]], k: int) -> List[List[int]]:
         """
         should have used quick or merge sort
-        Insertion sort have high time complexity
-        so until learning quick and merge sort used built in wort
+        Insertion sort have O(n^2) time complexity and O(n) space complexity
+        Therefore it is not the optimal solution
+        so until learning quick and merge sort used built in sort
         """
         points.sort(key=lambda x: x[0]**2 + x[1]**2)
         # distance_index: List[tuple] = []
@@ -24,7 +25,7 @@ class Solution:
         #     points[point] = points[distance_index[point][1]] 
         return points[:k]
             
-    def calculateDistance(x1: int, y1: int) -> float:
+    def calculateDistance(self, x1: int, y1: int) -> float:
         """ calculate the distance between points"""
         x = (x1) ** 2
         y= (y1) ** 2
