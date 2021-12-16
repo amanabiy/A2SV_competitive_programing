@@ -25,7 +25,7 @@ class Solution:
         #     points[point] = points[distance_index[point][1]] 
         return points[:k]
             
-    def calculateDistance(x1: int, y1: int) -> float:
+    def calculateDistance(self, x1: int, y1: int) -> float:
         """ calculate the distance between points"""
         x = (x1) ** 2
         y= (y1) ** 2
