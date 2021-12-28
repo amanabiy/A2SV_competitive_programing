@@ -38,12 +38,12 @@ class Student:
     def __gt__(self, stud):
         average1 = self.average()
         average2 = stud.average()
-        return True if average1 > average2 else False
+        return average1 > average2
 
     def __lt__(self, stud):
         average1 = self.average()
         average2 = stud.average()
-        return True if average1 < average2 else False
+        return average1 < average2
 
     def grade_report(self):
         print("student ID:", self.get_STUDENT_ID)
@@ -55,7 +55,7 @@ class Student:
         return "to be implemented"
 
 
-
+print()
 grade = defaultdict(int)
 grade2 = defaultdict(int)
 grade.update({
