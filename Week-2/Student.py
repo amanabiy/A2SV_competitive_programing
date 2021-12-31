@@ -29,7 +29,7 @@ class Student:
         return self.grade
 
     def compare(self, stud, subject):
-        return True if self.get_grade()[subject] > stud.get_grade()[subject] else False
+        return self.get_grade()[subject] > stud.get_grade()[subject]
     
     def average(self):
         print(self.get_grade())
@@ -76,3 +76,29 @@ print(student2.grade)
 print(student2)
 print(student1 > student2)
 print(student1 < student2)
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# smaller, larger
+"""
+0, 0, 0, a
+0, 0, 1, A
+1, 0, 0, 9
+1, 1, 0, 12
+is digit, even, upper, character
+"""
+def compare(c):
+    """ compare """
+    archive = []
+    archive.append(c.isdigit())
+    try:
+        archive.append(not int(c) % 2)
+    except:
+        archive.append(False)
+    archive.append(c.isupper())
+    archive.append(c)
+    # print (archive)
+    return archive
+
+text =  input()
+print("".join(sorted(text, key=compare)))
+            
