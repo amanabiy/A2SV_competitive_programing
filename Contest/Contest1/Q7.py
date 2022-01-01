@@ -10,7 +10,8 @@ rom = {
     "M": 1000
 }
 number = 0
-for i in range(len(s)):
+for i in range(len(s) -1 , -1 , -1):
     number += rom[s[i]]
-    
+    if i > 0 and rom[s[i]] > rom[s[i - 1]]:
+        number -= 2    
 print(number)
