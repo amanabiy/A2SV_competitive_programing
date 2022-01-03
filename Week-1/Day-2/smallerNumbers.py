@@ -1,6 +1,6 @@
 class Solution:
     def smallerNumbersThanCurrent(self, nums: List[int]) -> List[int]:
-        """ better solution """
+        """ better solution Time: O(nlogn)"""
         number = sorted(nums)
         less_num = {}
         for index, num in enumerate(number):
