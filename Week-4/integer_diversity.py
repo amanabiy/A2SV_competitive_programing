@@ -2,9 +2,9 @@
 
 def diverse(nums, size):
     """
-    time to write a word
-    Time: O(n+m)
-    Space
+    find the max size of nums you can diversify
+    Time: O(n)
+    Space: O(n)
     """
     nums.sort()
     for i in range(size - 1):
