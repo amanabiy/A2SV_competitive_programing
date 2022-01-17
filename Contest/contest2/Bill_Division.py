@@ -21,8 +21,8 @@ def bonAppetit(bills, k, b):
     for i, bill in enumerate(bills):
         if i != k:
             shared += bill
-    x = b - (shared // 2)
-    if shared % 2:
+    x = b - (shared / 2)
+    if x:
         print (x)
     else:
         print ("Bon Appetit")
