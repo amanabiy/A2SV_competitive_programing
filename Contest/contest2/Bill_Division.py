@@ -22,7 +22,7 @@ def bonAppetit(bills, k, b):
         if i != k:
             shared += bill
     x = b - (shared // 2)
-    if x:
+    if shared % 2:
         print (x)
     else:
         print ("Bon Appetit")
