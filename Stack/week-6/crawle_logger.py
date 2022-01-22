@@ -8,6 +8,6 @@ class Solution:
         for i in logs:
             if stack and i == '../':
                 stack.pop()
-            elif i != './' and i != '../':
+            if i != './' and i != '../':
                 stack.append(i)                
         return len(stack)
