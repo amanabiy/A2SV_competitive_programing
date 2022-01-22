@@ -1,5 +1,9 @@
 class RecentCounter:
-
+    """ Request counter
+    Time: O(1)
+    Space: O(n)
+    """
+ 
     def __init__(self):
         self.requests = []
         
