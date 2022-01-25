@@ -2,7 +2,7 @@ class Solution:
     def findUnsortedSubarray(self, nums: List[int]) -> int:
         """  find the longest unsorted part
         Time: O(n)
-        Space: O(2n)
+        Space: O(n)
         """
         stackLeft = []
         stackRight = []
