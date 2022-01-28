@@ -4,7 +4,6 @@ remove a substring from
 a given string
 """
 
-
 def remove_sub(word: str, sub: str) -> str:
     res = []
     for letter in word:
