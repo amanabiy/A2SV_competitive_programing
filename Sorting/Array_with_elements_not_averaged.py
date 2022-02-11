@@ -2,7 +2,7 @@ class Solution:
     def rearrangeArray(self, nums: List[int]) -> List[int]:
         """ It will be only average if the left is less and the right is 
         Greater than the middle element
-        Time: O(n)
+        Time: O(nlogn)
         Space: O(n)
         """
         nums.sort()
