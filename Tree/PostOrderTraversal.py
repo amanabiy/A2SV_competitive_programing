@@ -13,7 +13,6 @@ class Solution:
         stack = [root]
         ans = []
         visited = set()
-        visited_left = set()
         temp = root
         
         while stack:
