@@ -1,7 +1,7 @@
 class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         """
-        Time: O(nlog(k))
+        Time: O(nlog(n))
         Space: O(k)
         """
         ans = []
